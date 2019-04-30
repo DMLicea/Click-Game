@@ -28,6 +28,12 @@ function App() {
       
       />
 
+      <Card 
+
+      image={cat[1].image}
+
+      />
+
       </Container>
 
       <Footer />

@@ -7,7 +7,7 @@ function Card(props){
 
         <div className="card">
         
-        <div className="img-container">
+        <div className="img">
            
             <img
                 
@@ -15,7 +15,7 @@ function Card(props){
                 src={props.image}
             
             />
-            
+
         </div>
         
         </div>

@@ -3,6 +3,11 @@
     {
         "id": 1,
         "image": "testcat.jpg"
+    },
+
+    {
+        "id": 2,
+        "image": "cat2.jpg"
     }
 
     
