@@ -1,10 +1,10 @@
 import React from "react";
 import "./container.css";
 
-const Container = () => (
+function Container(props) {
 
-<p></p>
+    return <div className="wrapper">{props.children}</div>;
 
-);
+}
 
 export default Container;
