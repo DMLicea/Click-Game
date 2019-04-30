@@ -2,7 +2,7 @@
 
 { 
     
-    background-color: gold;
+    background-color: rgb(150, 1, 45);
 
 }
 
@@ -11,4 +11,6 @@ p
 {
 
     text-align: center;
+    color: gold;
+    
 }
