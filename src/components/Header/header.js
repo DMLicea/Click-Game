@@ -5,10 +5,12 @@ const Header = () => (
 
 <header className = "header">
 
-<p>Get Clickin!!!!</p>
+<h1>Click The Kitty!</h1>
 
-</header>)
+<h3>Click A Cat, Earn A Point! Click all the cats one time to win, but be careful! If you click any of them more than once, you lose!</h3>
 
-;
+</header>
+
+);
 
 export default Header;
