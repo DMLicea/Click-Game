@@ -34,6 +34,30 @@ function App() {
 
       />
 
+    <Card 
+
+    image={cat[0].image}
+
+    />
+
+    <Card 
+
+    image={cat[1].image}
+
+    />
+
+    <Card 
+
+    image={cat[0].image}
+      
+    />
+
+    <Card 
+
+    image={cat[1].image}
+
+    />
+
       </Container>
 
       <Footer />

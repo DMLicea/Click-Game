@@ -2,11 +2,12 @@
     
     {
 
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    min-height: 80%;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
+    margin: 0 auto;
 
     }
