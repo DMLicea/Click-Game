@@ -2,12 +2,12 @@
     
     {
         "id": 1,
-        "image": "testcat.jpg"
+        "image": "./images/testcat.jpg"
     },
 
     {
         "id": 2,
-        "image": "cat2.jpg"
+        "image": "./images/cat2.jpg"
     }
 
     

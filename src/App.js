@@ -5,6 +5,7 @@ import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+// import image from "./images/cat2.jpg"
 
 import cat from "./cat.json";
 
