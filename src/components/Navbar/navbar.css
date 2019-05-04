@@ -1,0 +1,40 @@
+
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    position: fixed;
+    }
+.navbar li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  
+  .left {
+    width: 15%;
+  }
+  
+  .middle {
+      width: 70%;
+  }
+  
+  .right {
+    width: 15%;
+  }
+  
+  .navbar {
+    background: rgb(34, 0, 21);
+
+
+  }
+  
+  li {
+    color: gold;
+    padding: 15px 0;
+  }
+  
+  body {
+    font-size: 10px;
+  }
