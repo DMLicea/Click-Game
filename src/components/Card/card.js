@@ -9,9 +9,9 @@ const Card = props => (
 
         <img 
         
-        alt={"placeholder"}
          
-        src={props.image} />
+        src={props.image} 
+        alt={props.id}/>
         
       </div>
 

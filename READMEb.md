@@ -17,3 +17,11 @@
 * * The user's score should be reset to 0 if they click the same image more than once.
 
 * * Once the user's score is reset after an incorrect guess, the game should restart.
+
+* The Tech
+
+* * React
+
+* * JavaScript
+
+* * ES6
