@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React, { Component } from "react";
 import Card from "./components/Card";
 import Container from "./components/Container";
 import Footer from "./components/Footer";
@@ -9,53 +8,98 @@ import cat from "./cat.json";
 
 import './App.css';
 
-function App() {
+class App extends Component {
+
+
+// this.state.cat set to cat json array
+
+  state = {
+
+    cat,
+    
+    clickedCat: [],
+    
+    score: 0
+  
+  };
+
+
+imageClick = event => {
+    const currentCat = event.target.alt;
+    const CatAlreadyClicked =
+      this.state.clickedCat.indexOf(currentCat) > -1;
+
+//if the cat is already reclicked, reset
+
+    if (CatAlreadyClicked) {
+
+      this.setState({
+        cat: this.state.cat.sort(function(a, b) {
+          return 0.5 - Math.random();
+        }),
+        clickedCat: [],
+        score: 0
+      });
+        alert("Oops! You lost!");
+
+//if not cards reshuffle and you get a point
+
+    } else {
+      this.setState(
+        {
+          cat: this.state.cat.sort(function(a, b) {
+            return 0.5 - Math.random();
+          }),
+          clickedCat: this.state.clickedCat.concat(
+            currentCat
+          ),
+          score: this.state.score + 1
+        },
+
+//if all 12 clicked you get message and cards reset  
+
+        () => {
+          if (this.state.score === 6) {
+            alert("You Won!");
+            this.setState({
+              cat: this.state.cat.sort(function(a, b) {
+                return 0.5 - Math.random();
+              }),
+              clickedCat: [],
+              score: 0
+            });
+          }
+        }
+      );
+    }
+  };
+
+  
+
+  render() {
 
   return (
 
     <div>
 
-      <Navbar />
+      <Navbar 
+      
+      score={this.state.score}
+      
+      />
 
       <Header />
 
       <Container>
 
-      <Card 
-
-        image={cat[0].image}
-      
-      />
-
-      <Card 
-
-      image={cat[1].image}
-
-      />
-
-    <Card 
-
-    image={cat[2].image}
-
-    />
-
-    <Card 
-
-    image={cat[3].image}
-
-    />
-
-    <Card 
-
-    image={cat[4].image}
-      
-    />
-
-    <Card 
-
-    image={cat[5].image}
-
-    />
+          {this.state.cat.map(cat => (
+            <Card
+              imageClick={this.imageClick}
+              id={cat.id}
+              key={cat.id}
+              image={cat.image}
+            />
+          ))}
 
       </Container>
 
@@ -64,6 +108,7 @@ function App() {
     </div>
   
   );
-}
+
+}}
 
 export default App;
