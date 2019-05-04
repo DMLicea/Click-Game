@@ -5,8 +5,6 @@ import Container from "./components/Container";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-// import image from "./images/cat2.jpg"
-
 import cat from "./cat.json";
 
 import './App.css';
@@ -37,25 +35,25 @@ function App() {
 
     <Card 
 
-    image={cat[0].image}
+    image={cat[2].image}
 
     />
 
     <Card 
 
-    image={cat[1].image}
+    image={cat[3].image}
 
     />
 
     <Card 
 
-    image={cat[0].image}
+    image={cat[4].image}
       
     />
 
     <Card 
 
-    image={cat[1].image}
+    image={cat[5].image}
 
     />
 

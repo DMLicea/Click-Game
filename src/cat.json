@@ -8,7 +8,29 @@
     {
         "id": 2,
         "image": "./images/cat2.jpg"
+    },
+
+    {
+        "id": 3,
+        "image": "./images/cat3.jpg"
+    },
+
+    {
+        "id": 4,
+        "image": "./images/cat4.jpg"
+    },
+
+    {
+        "id": 5,
+        "image": "./images/cat5.jpg"
+    },
+
+    {
+        "id": 6,
+        "image": "./images/cat6.jpg"
     }
+
+
 
     
 ]
