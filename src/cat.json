@@ -29,6 +29,37 @@
     {
         "id": 6,
         "image": "./images/cat6.jpg"
+    },
+
+    {
+        "id": 7,
+        "image": "./images/cat7.jpg"
+        
+    },
+
+    {
+        "id": 8,
+        "image": "./images/cat8.jpg"
+    },
+
+    {
+        "id": 9,
+        "image": "./images/cat9.jpg"
+    },
+
+    {
+        "id": 10,
+        "image": "./images/cat10.jpg"
+    },
+
+    {
+        "id": 11,
+        "image": "./images/cat11.jpg"
+    },
+
+    {
+        "id": 12,
+        "image": "./images/cat12.jpg"
     }
 
 

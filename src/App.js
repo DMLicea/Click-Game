@@ -62,7 +62,7 @@ imageClick = event => {
 //if all 12 clicked you get message and cards reset  
 
         () => {
-          if (this.state.score === 6) {
+          if (this.state.score === 12) {
 
             alert("You Won!");
 
